@@ -1,0 +1,46 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "visual-studio-code-workspaces",
+  "title": "Visual Studio Code Workspaces",
+  "description": "Maps your local Visual Studio Code Workspaces and lists them for you.",
+  "icon": "icon.png",
+  "author": "SirMathays",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "list",
+      "title": "List Workspaces",
+      "subtitle": "Visual Studio Code",
+      "description": "List your local Visual Studio Code Workspaces",
+      "mode": "view"
+    },
+    {
+      "name": "force-refresh",
+      "title": "Force Refresh Workspaces",
+      "subtitle": "Visual Studio Code",
+      "description": "Force search for Workspace files in your system",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.27.0",
+    "lodash": "^4.17.21",
+    "uuid-by-string": "^3.0.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "@types/node": "~16.10.0",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "react-devtools": "^4.19.2",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint"
+  }
+}
